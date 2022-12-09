@@ -189,3 +189,31 @@
 
 
 }
+
+
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+ 
+@media screen and (max-width: 1000px) {
+    .right{
+        display: none;    
+    }
+
+    .left{
+        background-color: rgb(238, 230, 219);
+        width: 100%;
+        padding: 60px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+
+    .left .left-content-box {
+        width: 85%;
+        height: 450px;
+    }
+  }
