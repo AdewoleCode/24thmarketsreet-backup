@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        background: #fff;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .content-box {
+        width: 45%;
+        margin: 0 auto;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        /* justify-content: space-between;
+        margin-bottom: 50px; */
+      }
+      .content-box .err-number {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .content-box .err-number img {
+        width: 180px;
+        width: 180px;
+        margin: 0 10px;
+        padding: 0 10px;
+      }
+
+      .content-box .err-number .number-0 {
+        font-size: 210px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: #ff5c5c;
+        padding: 0 0;
+        margin: 0 0;
+        font-weight: bolder;
+      }
+
+      .content-box button {
+        width: 55%;
+        margin: 0 auto;
+        background-color: #191919;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      .content-box h2 {
+        font-size: 39px;
+        color: #212121;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .content-box {
+          width: 85%;
+          padding: 50px;
+        }
+
+        .content-box .err-number img {
+          width: 90px;
+          width: 90px;
+          margin: 0 0px;
+          padding: 0 0px;
+        }
+
+        .content-box .err-number .number-0 {
+          font-size: 120px;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          color: #ff5c5c;
+          padding: 0 0;
+          margin: 0 5px;
+        }
+
+        .content-box button {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 680px) {
+        .content-box {
+          width: 100%;
+          padding: 30px;
+        }
+
+        .content-box .err-number img {
+          width: 90px;
+          width: 90px;
+          margin: 0 0px;
+          padding: 0 0px;
+        }
+
+        .content-box h2 {
+        font-size: 30px;
+        color: #212121;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+ 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-box">
+        <div class="err-number">
+          <img src="./src/5@2x.svg" alt="" />
+          <h1 class="number-0">0</h1>
+          <img src="./src/5@2x.svg" alt="" />
+        </div>
+        <h2>PAGE  NOT  FOUND !!!</h2>
+        <button>Back To Home</button>
+      </div>
+    </div>
+  </body>
+</html>

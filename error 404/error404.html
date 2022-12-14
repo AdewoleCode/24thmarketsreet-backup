@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erro Screen</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: Work Sans;
+      }
+
+      .container {
+        width: 100%;
+        background: #fff;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .content-box {
+        width: 25%;
+        text-align: center;
+        height: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 50%;
+            margin: 0 auto; */
+      }
+
+      .content-box .shirt {
+        width: 190px;
+        height: 190px;
+        position: relative;
+      }
+
+      .content-box .shirt-img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .content-box .shirt img {
+        color: #ff5c5c;
+      }
+
+      .icon {
+        position: absolute;
+        right: 30px;
+        top: 0px;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+      }
+
+      .content-box h2 {
+        font-size: 27px;
+        color: #212121;
+      }
+
+      .content-box p {
+        color: #4d4d4d;
+      }
+
+      .content-box button {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #191919;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .content-box {
+          width: 75%;
+          height: 45%;
+          margin: 0 auto;
+          margin: 10% auto;
+        }
+
+        .content-box .shirt {
+          width: 250px;
+          height: 180px;
+          position: relative;
+          margin-top: 30px;
+        }
+      }
+
+      @media screen and (max-width: 680px) {
+        .content-box {
+          width: 90%;
+          height: 50%;
+          margin: 0 auto;
+          border: 1px solid red;
+        }
+
+        .content-box p {
+          font-size: 16px;
+          line-height: 1.4;
+          color: #212121;
+        }
+      }
+
+      @media screen and (max-width: 380px) {
+        .content-box {
+          width: 90%;
+          height: 65%;
+          margin: 0 auto;
+        }
+
+        .content-box .shirt {
+          margin-top: 10px;
+        }
+
+        .content-box p {
+          font-size: 16px;
+          line-height: 1.4;
+          color: #212121;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-box">
+        <div class="shirt">
+          <img src="./src/icons8-cancel-64.png" alt="" class="icon" />
+          <img src="./src/Vector 377.svg" alt="" class="shirt-img" />
+        </div>
+        <h2>No Fashion Here</h2>
+        <p>
+          We apologize for this error, please check your internet connection and
+          try again
+        </p>
+        <button>Back To Home</button>
+      </div>
+    </div>
+  </body>
+</html>
